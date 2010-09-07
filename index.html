@@ -1,10 +1,82 @@
 <!DOCTYPE html> 
 <html> 
-  <head></head>
-  <body>
-    <h1>Beard ratio at <a href="http://twitter.com/freerange" title="Visit Go Free Range on twitter">@freerange</a></h1>
+  <head>
+    <script type="text/javascript" src="http://use.typekit.com/xcy7vap.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     
-    <p>Office ratio: <strong>[OFFICE_RATIO]</strong></p>
-    <p>Current overall: <strong>[OVERALL_RATIO]</strong></p>
+    <style type="text/css" media="screen">
+      body {
+        background: #ff6b8e;
+      }
+      
+      section {
+        background: #ff6b8e url(/assets/bg.png);
+        width: 849px;
+        height: 803px;
+        margin: 0 auto;
+        position: relative;
+      }
+    
+      h1 {
+        width: 221px;
+        height: 171px;
+        position: absolute;
+        top: 50px;
+        right: 150px;
+      }
+      
+      h1 a {
+        background: url(/assets/logo.png);
+        display: block;
+        text-indent: -9999px;
+        width: 221px;
+        height: 171px;
+      }
+      
+      h2 {
+        font-family: "orgovan-rounded-web-1","orgovan-rounded-web-2",sans-serif;
+        position: absolute;
+        top: 270px;
+        right: 60px;
+        font-size: 2em;
+        color: white;
+        text-shadow: 1px 1px 2px #222;
+      }
+      
+      p {
+        font-size: 2em;
+        text-align: center;
+        font-weight: normal;
+        font-family: "orgovan-rounded-web-1","orgovan-rounded-web-2",sans-serif;
+        color: #999;
+      }
+      
+      p strong {
+        display: block;
+        font-size: 2em;
+        font-family: "bello-pro-1","bello-pro-2",sans-serif;
+        color: #333;
+      }
+      
+      p#office {
+        position: absolute;
+        top: 340px;
+        right: 96px;
+      }
+      
+      p#overall {
+        position: absolute;
+        top: 565px;
+        right: 140px;
+      }
+    </style>
+  </head>
+  <body>    
+    <section>
+      <h1><a href="http://twitter.com/freerange" title="Visit Go Free Range on twitter">Go Free Range</a></h1>
+      <h2>mighty Beard Ratios</h2>
+      <p id="office">at HQ: <strong>[OFFICE_RATIO]</strong></p>
+      <p id="overall">Overall: <strong>[OVERALL_RATIO]</strong></p>
+    </section>
   </body>
 </html>

@@ -1,5 +1,6 @@
+use Rack::Static, :urls => ["/assets"]
 
-run lambda { |env| 
+run lambda { |env|   
   
   james_m = :beard
   chris = :beard
