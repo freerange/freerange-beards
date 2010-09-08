@@ -32,8 +32,8 @@ run lambda { |env|
     people.map { |m| weighting_for_person(m) }.inject(0) {|a,b| a + b }
   end
 
-  body = File.read('index.html').gsub(/\[OVERALL_RATIO\]/, "#{beard_ratio(members)}/#{members.length}")
-  body.gsub!(/\[OFFICE_RATIO\]/, "#{beard_ratio(in_office)}/#{in_office.length}")
+  body = File.read('index.html').gsub(/\[OVERALL_RATIO\]/, "#{sprintf("%.2f", beard_ratio(members))}/#{members.length}")
+  body.gsub!(/\[OFFICE_RATIO\]/, "#{sprintf("%.2f", beard_ratio(in_office))}/#{in_office.length}")
 
   [
     200,
