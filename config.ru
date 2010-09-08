@@ -17,9 +17,9 @@ run lambda { |env|
         @beardiness[person] = if latest_tweet.text =~ /#has_a_beard/
           1
         elsif latest_tweet.text =~ /#trimmed/
-          [1, (days_since_tweet / 10) + 0.1].max
+          [1, (days_since_tweet / 10) + 0.1].min
         else
-          [1, (days_since_tweet / 10)].max
+          [1, (days_since_tweet / 10)].min
         end
       else
         @beardiness[person] = 0.2 # guess
