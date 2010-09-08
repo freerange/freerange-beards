@@ -5,7 +5,7 @@ use Rack::Static, :urls => ["/assets"]
 run lambda { |env|
 
   members = %w(floehopper chrisroos lazyatom jasoncale tomafro kalv)
-  in_office = %w(floehopper chrisroos lazyatom jasoncale)
+  in_office = %w(tomafro kalv chrisroos lazyatom jasoncale)
 
   # pathetically simple cache
   @beardiness = {}
