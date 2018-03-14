@@ -14,6 +14,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.1)
     multipart-post (2.0.0)
     naught (1.0.0)
+    rack (1.6.9)
     simple_oauth (0.2.0)
     thread_safe (0.3.4)
     twitter (5.10.0)
@@ -32,4 +33,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  rack
   twitter
+
+RUBY VERSION
+   ruby 2.0.0p648
+
+BUNDLED WITH
+   1.16.1
